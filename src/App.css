@@ -38,7 +38,8 @@
 .status-intro {
   max-width: 500px;
   margin: 0;
-  font-size: 16px;
+  color: #667080;
+  font-size: 13px;
   line-height: 1.6;
 }
 
@@ -149,6 +150,64 @@
   background: #f8f7f7;
   border-radius: 0 0 12px 12px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* approved email */
+.approved-email {
+  min-height: 390px;
+  padding: 74px 20px 68px;
+  color: #667080;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.approved-eyebrow {
+  margin: 0 0 28px;
+  color: #090909;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.approved-message {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.approved-email .email-button {
+  margin: 35px 0 30px;
+  font-size: 14px;
+}
+
+.approved-description {
+  margin: 0;
+  color: #667080;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.approved-message,
+.approved-description,
+.signup-message,
+.signup-description,
+.verify-message,
+.verify-help {
+  color: #667080;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .approved-email {
+    min-height: 360px;
+    padding: 58px 16px 50px;
+  }
+
+  .approved-eyebrow {
+    font-size: 15px;
+  }
+
 }
 
 /* footer */
@@ -276,9 +335,6 @@
 
 .signup-message {
   margin: 0;
-  color: #667080;
-  font-size: 14px;
-  line-height: 1.55;
 }
 
 .signup-email .email-button {
@@ -287,9 +343,6 @@
 
 .signup-description {
   margin: 0;
-  color: #667080;
-  font-size: 13px;
-  line-height: 1.55;
 }
 
 /* verify email */
@@ -311,8 +364,6 @@
 
 .verify-message {
   margin: 0;
-  font-size: 13px;
-  line-height: 1.55;
 }
 
 .verify-email .email-button {
@@ -321,8 +372,6 @@
 
 .verify-help {
   margin: 0;
-  font-size: 12px;
-  line-height: 1.55;
 }
 
 @media (max-width: 600px) {
@@ -335,9 +384,6 @@
     font-size: 15px;
   }
 
-  .verify-message {
-    font-size: 12px;
-  }
 }
 
 @media (max-width: 600px) {

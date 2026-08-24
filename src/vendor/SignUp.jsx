@@ -17,7 +17,7 @@ function SignUp() {
 
         <EmailButton href="https://godokan.com">EXPLORE GODOKAN</EmailButton>
 
-        <p>
+        <p className="signup-description">
           Discover products from multiple sellers
           <br />
           all in one place.
