@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import BusinessDetailsStatus from "./vendor/BusinessDetailsStatus";
 import SignUp from "./vendor/SignUp";
+import VerifyEmail from "./vendor/VerifyEmail";
 
 function App() {
   const path = window.location.pathname.replace(/\/$/, "") || "/";
@@ -13,6 +14,10 @@ function App() {
 
     if (path === "/vendor/signup") {
     return <SignUp />;
+  }
+
+   if (path === "/vendor/verify-email") {
+    return <VerifyEmail />;
   }
 
   return (

@@ -14,7 +14,6 @@ function SignUp() {
           <br />
           Your account has been successfully created.
         </p>
-        <br />
 
         <EmailButton href="https://godokan.com">EXPLORE GODOKAN</EmailButton>
 

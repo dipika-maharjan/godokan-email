@@ -86,17 +86,6 @@
   font-size: 19px;
 }
 
-.status-button {
-  display: inline-block;
-  padding: 13px 22px;
-  border-radius: 4px;
-  background: #ffd400;
-  color: #171717;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .status-help {
   margin: 28px 0 0;
   color: #888888;
@@ -157,11 +146,12 @@
   margin: 0 auto;
   padding: 28px 20px 18px;
   color: #666666;
-  background: #efefef;
+  background: #f8f7f7;
   border-radius: 0 0 12px 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* footer */
 .footer-top {
   padding: 0 28px 28px;
 }
@@ -259,6 +249,7 @@
   text-align: center;
 }
 
+/* signup email */
 .signup-email {
   min-height: 390px;
   padding: 72px 24px 68px;
@@ -290,32 +281,8 @@
   line-height: 1.55;
 }
 
-.signup-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  min-width: 170px;
+.signup-email .email-button {
   margin: 34px 0 16px;
-  padding: 13px 18px;
-  border-radius: 5px;
-  background: #ffca05;
-  color: #111111;
-  font-size: 11px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.signup-button-icon {
-  display: inline-grid;
-  width: 13px;
-  height: 13px;
-  place-items: center;
-  border-radius: 50%;
-  background: #111111;
-  color: #ffca05;
-  font-size: 11px;
-  line-height: 1;
 }
 
 .signup-description {
@@ -323,6 +290,54 @@
   color: #667080;
   font-size: 13px;
   line-height: 1.55;
+}
+
+/* verify email */
+.verify-email {
+  min-height: 358px;
+  padding: 66px 20px 58px;
+  color: #667080;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.verify-eyebrow {
+  margin: 0 0 27px;
+  color: #090909;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.verify-message {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.verify-email .email-button {
+  margin: 32px 0 27px;
+}
+
+.verify-help {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+@media (max-width: 600px) {
+  .verify-email {
+    min-height: 358px;
+    padding: 58px 16px 50px;
+  }
+
+  .verify-eyebrow {
+    font-size: 15px;
+  }
+
+  .verify-message {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 600px) {
