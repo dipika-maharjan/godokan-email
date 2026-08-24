@@ -1,9 +1,9 @@
-import vendorLogo from "../assets/vendor-logo.png";
+import customLogo from "../assets/customer-logo.png";
 
 function Header() {
   return (
     <header className="email-header">
-      <img className="email-header__logo" src={vendorLogo} alt="GODOKAN" />
+      <img className="email-header__logo" src={customLogo} alt="GODOKAN" />
     </header>
   );
 }
