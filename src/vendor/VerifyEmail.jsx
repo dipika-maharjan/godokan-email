@@ -1,23 +1,29 @@
-import EmailLayout from "../components/VendorEmailLayout";
-import EmailButton from "../components/VendorEmailButton";
+import VendorEmailLayout from "../components/VendorEmailLayout";
+import VendorEmailButton from "../components/VendorEmailButton";
 
-function VerifyEmail() {
+function VerifyEmail({
+  name="user",
+  link="https://godokan.com/verify-email",
+}) {
   return (
     <VendorEmailLayout>
       <article className="verify-email">
         <p className="verify-eyebrow">VERIFY YOUR EMAIL</p>
 
+        {/* dynamic name and verification instructions */}
+        <h1>Hello {name},</h1>
         <p className="verify-message">
-          We've sent a verification link to your email address.
+          We&apos;ve sent a verification link to your email address.
           <br />
           Please verify your email to activate your GoDokan account
           <br />
           and get started.
         </p>
 
-        <EmailButton href="https://godokan.com/verify-">
+        {/* dynamic verification URL */}
+        <VendorEmailButton href={link}>
           CHECK YOUR EMAIL
-        </EmailButton>
+        </VendorEmailButton>
 
         <p className="verify-help">
           <br />

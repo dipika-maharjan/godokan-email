@@ -1,21 +1,31 @@
-import EmailLayout from "../components/VendorEmailLayout";
-import EmailButton from "../components/VendorEmailButton";
+import VendorEmailLayout from "../components/VendorEmailLayout";
+import VendorEmailButton from "../components/VendorEmailButton";
 
-function SignUp() {
+function SignUp({
+  // default value is used only where no name is provided during signup,  and the link is used to redirect the user to the godokan website
+  name="user",   
+  link="https://godokan.com/"
+}) {
   return (
-    <EmailLayout>
-      <article className="signup-email">
+    <VendorEmailLayout>
+      <article className="signup-email" aria-labelledby="signup-title">
         <p className="signup-eyebrow">WELCOME TO GODOKAN</p>
 
-        <h1 id="signup-title">Thank your for signing up!</h1>
+        {/*dynamic user name*/}
+        <h1 id="signup-title">Thank you for signing up, {name}!</h1>
 
         <p className="signup-message">
-          We're excited to have you on GoDokan!
+          We&apos;re excited to have you on GoDokan!
           <br />
-          Your account has been successfully created.
+          Your account is currently pending verification.
+          <br/>
+          Once verified, you will be able to log in.
         </p>
 
-        <EmailButton href="https://godokan.com">EXPLORE GODOKAN</EmailButton>
+        {/* The link prop controls where the CTA sends the user */}
+        <VendorEmailButton href={link} showArrow>
+          EXPLORE GODOKAN
+        </VendorEmailButton>
 
         <p className="signup-description">
           Discover products from multiple sellers
@@ -24,7 +34,7 @@ function SignUp() {
         </p>
         <br />
       </article>
-    </EmailLayout>
+    </VendorEmailLayout>
   );
 }
 

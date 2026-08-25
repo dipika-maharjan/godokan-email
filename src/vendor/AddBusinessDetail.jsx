@@ -1,15 +1,19 @@
-import EmailLayout from "../components/VendorEmailLayout";
-import EmailButton from "../components/VendorEmailButton";
+import VendorEmailLayout from "../components/VendorEmailLayout";
+import VendorEmailButton from "../components/VendorEmailButton";
 
-function AddBusinessDetail() {
+function AddBusinessDetail({
+    name="user",
+    link="https://godokan.com/business-details",
+}) {
   return (
-    <EmailLayout>
+    <VendorEmailLayout>
       <article
         className="add-business-email"
         aria-labelledby="add-business-title"
       >
         <h1 id="add-business-title">COMPLETE YOUR BUSINESS PROFILE</h1>
-
+        {/* Dynamic name and onboarding message */}
+        <h2>Hello {name},</h2>
         <p className="add-business-message">
           Your GoDokan account has been activated.
           <br />
@@ -18,9 +22,10 @@ function AddBusinessDetail() {
           complete your seller profile.
         </p>
 
-        <EmailButton href="https://godokan.com/business-details">
+        {/* Dynamic business details URL */}
+        <VendorEmailButton href={link}>
           ADD BUSINESS DETAILS
-        </EmailButton>
+        </VendorEmailButton>
 
         <section
           className="business-next"
@@ -36,7 +41,7 @@ function AddBusinessDetail() {
           </ol>
         </section>
       </article>
-    </EmailLayout>
+    </VendorEmailLayout>
   );
 }
 

@@ -1,24 +1,34 @@
-import EmailLayout from "../components/VendorEmailLayout";
-import EmailButton from "../components/VendorEmailButton";
+import VendorEmailLayout from "../components/VendorEmailLayout";
+import VendorEmailButton from "../components/VendorEmailButton";
 
-function BusinessDetailsStatus() {
+function BusinessDetailsStatus({
+  name = "user",
+  link = "https://godokan.com/business-details",
+  sellerName = "GoDokan",
+  status = "under-review",
+  title = "BUSINESS DETAILS STATUS",
+  body = "Thank you for submitting your business information.",
+}) {
   return (
-    <EmailLayout>
+    <VendorEmailLayout>
       <article className="status-email" aria-labelledby="status-title">
+        {/* Dynamic title */}
         <p id="status-title" className="status-eyebrow">
-          BUSINESS DETAILS STATUS
+          {title}
         </p>
 
-        <p className="status-heading">We've received your business details</p>
+        {/* Dynamic user name and current status */}
+        <p className="status-heading">
+          Hello {name}, your business details are {status}
+        </p>
 
+        {/* Dynamic body message */}
         <p className="status-intro">
-          Thank you for submitting your business information.
+          {body}
           <br />
           Our team is currently reviewing your details.
           <br />
-          We&apos;ll notify you once the review is complete and let you know
-          <br />
-          about the next steps.
+          We&apos;ll notify you once the review is complete.
         </p>
 
         <div className="status-panel" role="status">
@@ -29,14 +39,13 @@ function BusinessDetailsStatus() {
               <br />
               followed by the seller verification process.
             </p>
+            <small>Seller: {sellerName}</small>
           </div>
         </div>
 
-        <EmailButton href="https://godokan.com/business-details">
-          VIEW BUSINESS DETAILS
-        </EmailButton>
+        <VendorEmailButton href={link}>VIEW BUSINESS DETAILS</VendorEmailButton>
       </article>
-    </EmailLayout>
+    </VendorEmailLayout>
   );
 }
 
