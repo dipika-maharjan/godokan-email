@@ -1,5 +1,5 @@
-import EmailLayout from "../components/EmailLayout";
-import EmailButton from "../components/EmailButton";
+import EmailLayout from "../components/VendorEmailLayout";
+import EmailButton from "../components/VendorEmailButton";
 
 export default function AccountApproved() {
   return (

@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/VendorHeader";
 import "./App.css";
 import Footer from "./components/VendorFooter";
 import BusinessDetailsStatus from "./vendor/BusinessDetailsStatus";

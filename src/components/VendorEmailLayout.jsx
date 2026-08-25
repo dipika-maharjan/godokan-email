@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "./VendorHeader";
 import Footer from "./VendorFooter";
 
 function EmailLayout({ children }) {

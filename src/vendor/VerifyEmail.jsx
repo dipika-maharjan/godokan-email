@@ -1,5 +1,5 @@
-import EmailLayout from "../components/EmailLayout";
-import EmailButton from "../components/EmailButton";
+import EmailLayout from "../components/VendorEmailLayout";
+import EmailButton from "../components/VendorEmailButton";
 
 function VerifyEmail() {
   return (
@@ -20,12 +20,12 @@ function VerifyEmail() {
         </EmailButton>
 
         <p className="verify-help">
-          <br/>
+          <br />
           Didn&apos;t receive the email?
           <br />
           Check your spam or junk folder, or request a new verification email.
         </p>
-        <br/>
+        <br />
       </article>
     </EmailLayout>
   );
