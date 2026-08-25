@@ -28,7 +28,7 @@ function App() {
 
   return (
     <EmailLayout>
-      
+      <Email />
     </EmailLayout>
   );
 }

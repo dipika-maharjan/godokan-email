@@ -40,23 +40,26 @@ function Footer() {
         </strong>
 
         <div className="footer-socials">
-          <a href="#" aria-label="Facebook">
+          <a href="https://www.facebook.com/godokannepal" aria-label="Facebook">
             <Icon name="facebook" />
           </a>
-          <a href="#" aria-label="Instagram">
+          <a href="https://www.instagram.com/go.dokan/" aria-label="Instagram">
             <Icon name="instagram" />
           </a>
-          <a href="#" aria-label="WhatsApp">
+          <a href="https://wa.me/godokan" aria-label="WhatsApp">
             <Icon name="whatsapp" />
+          </a>
+          <a href="https://www.youtube.com/@godokan" aria-label="YouTube">
+            <Icon name="youtube" />
           </a>
         </div>
       </div>
 
       <nav className="footer-links" aria-label="Footer navigation">
-        <a href="#">About Us</a>
-        <a href="#">Help &amp; Support</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms and Conditions</a>
+        <a href="https://godokan.com/help/getting-started/about-go-dokan">About Us</a>
+        <a href="https://godokan.com/support">Help &amp; Support</a>
+        <a href="https://godokan.com/help/legal/privacy-policy">Privacy Policy</a>
+        <a href="https://godokan.com/help/legal/terms-and-conditions">Terms and Conditions</a>
       </nav>
 
       <p className="footer-copyright">
