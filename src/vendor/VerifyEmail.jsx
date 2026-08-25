@@ -10,7 +10,7 @@ function VerifyEmail() {
         <p className="verify-message">
           We've sent a verification link to your email address.
           <br />
-          Please verify your emai to activate your GoDokan account
+          Please verify your email to activate your GoDokan account
           <br />
           and get started.
         </p>
