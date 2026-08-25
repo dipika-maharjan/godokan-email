@@ -12,6 +12,88 @@
   background: #ffffff;
 }
 
+.email-main > article {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
+.verify-mail,
+.account-activated,
+.status-card {
+  padding: 48px 56px 52px;
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.verify-mail__icon,
+.account-activated__logo,
+.status-card__badge {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 20px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffca05;
+  color: #111111;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.verify-mail__icon svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.verify-mail h1,
+.account-activated h1,
+.status-card h1 {
+  margin: 0 0 16px;
+  color: #111111;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.verify-mail__text,
+.account-activated__text,
+.status-card p {
+  margin: 0 auto 26px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.verify-mail .email-button,
+.account-activated .email-button,
+.status-card .email-button {
+  margin-bottom: 20px;
+  border-radius: 999px;
+}
+
+.verify-mail__note,
+.account-activated__skip {
+  margin: 0;
+  color: #888888;
+  font-size: 12px;
+}
+
+.status-card__badge--success {
+  background: #d9f2df;
+  color: #24733a;
+}
+
+.status-card__badge--danger {
+  background: #f8d9d5;
+  color: #a52f25;
+}
+
 .status-email {
   padding: 52px 56px 56px;
   color: #666666;
@@ -89,7 +171,7 @@
 .status-button {
   display: inline-block;
   padding: 13px 22px;
-  border-radius: 4px;
+  border-radius: 999px;
   background: #ffd400;
   color: #171717;
   font-size: 14px;
@@ -112,15 +194,34 @@
   align-items: center;
   justify-content: center;
   gap: 9px;
-  min-width: 170px;
-  padding: 13px 22px;
-  border-radius: 5px;
+  min-width: 190px;
+  padding: 13px 24px;
+  border: 2px solid #e6b600;
+  border-radius: 999px;
   background: #ffca05;
   color: #111111;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
+  box-shadow: 0 3px 0 #c99f00;
+  transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.email-button:hover {
+  background: #ffd83d;
+  box-shadow: 0 4px 0 #c99f00;
+  transform: translateY(-1px);
+}
+
+.email-button:active {
+  box-shadow: 0 1px 0 #c99f00;
+  transform: translateY(2px);
+}
+
+.email-button:focus-visible {
+  outline: 3px solid #222222;
+  outline-offset: 3px;
 }
 
 .email-button__icon {
@@ -299,7 +400,7 @@
   min-width: 170px;
   margin: 34px 0 16px;
   padding: 13px 18px;
-  border-radius: 5px;
+  border-radius: 999px;
   background: #ffca05;
   color: #111111;
   font-size: 11px;
@@ -375,7 +476,7 @@
   min-width: 0;
   margin-top: 18px;
   padding: 10px 8px;
-  border-radius: 3px;
+  border-radius: 999px;
   font-size: 10px;
 }
 

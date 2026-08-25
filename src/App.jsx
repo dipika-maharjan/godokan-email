@@ -1,8 +1,13 @@
 import "./App.css";
-import BusinessDetailsStatus from "./vendor/BusinessDetailsStatus";
+import EmailLayout from "./components/EmailLayout";
+import SignupMail from "./Customer/signup-mail";
 
 function App() {
-  return <BusinessDetailsStatus />;
+  return (
+    <EmailLayout>
+      <SignupMail />
+    </EmailLayout>
+  );
 }
 
 export default App;

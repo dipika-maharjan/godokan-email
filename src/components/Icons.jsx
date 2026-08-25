@@ -37,6 +37,18 @@ function Icon({ name, className = "" }) {
         <path d="M9 8.5c.2-.4.5-.4.8-.4l.7 1.7c.1.2.1.4-.1.6l-.5.6c.7 1.2 1.5 1.9 2.7 2.5l.5-.6c.2-.2.4-.2.6-.1l1.7.8c.3.1.3.4.2.7-.3.8-1 1.2-1.7 1.1-3.8-.7-6-2.9-6.7-6.1-.1-.3.1-.6.3-.8l.5-.5Z" />
       </>
     ),
+    check: (
+      <>
+        <circle cx="12" cy="12" r="9" fill="currentColor" stroke="none" />
+        <path d="m8 12 2.5 2.5L16 9" fill="none" stroke="#ffffff" />
+      </>
+    ),
+    info: (
+      <>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 11v5M12 8h.01" />
+      </>
+    ),
   };
 
   return (
