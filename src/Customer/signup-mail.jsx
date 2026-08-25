@@ -1,7 +1,9 @@
 import EmailButton from "../components/EmailButton";
 import Icon from "../components/Icons";
 
-function SignupMail() {
+function SignupMail({
+	 name = "", 
+	 link = "#" }) {
 	return (
 		<article className="signup-mail" aria-labelledby="signup-title">
 			<div className="signup-mail__heading">
@@ -13,7 +15,7 @@ function SignupMail() {
 				<p>
 					Welcome to Godokan,
 					<br />
-					{"{{name}}"}.
+					{name}.
 				</p>
 				<p>
 					Your account is currently
@@ -29,9 +31,7 @@ function SignupMail() {
 					is active.
 				</p>
 
-				<EmailButton href="https://godokan.com/account/status">
-					View Account Status
-				</EmailButton>
+				<EmailButton href={link}>Start Exploring</EmailButton>
 			</section>
 
 			<div className="signup-mail__notice">
