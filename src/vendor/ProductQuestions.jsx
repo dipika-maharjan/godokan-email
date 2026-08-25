@@ -16,7 +16,7 @@ function ProductQuestions({
   // Customer question data used by the question section.
   question = {
     title: "Is this product available in black?",
-    by: "John Doe",
+    by: "NewUser",
     url: "https://godokan.com/seller/questions/1",
   },
 }) {
@@ -37,7 +37,8 @@ function ProductQuestions({
 
         {/* Dynamic seller name */}
         <p className="product-question-message">
-          A customer has posted a question about your product on GoDokan.
+          A customer has posted a question about a product from {sellerName} on
+          GoDokan.
           <br />
         </p>
 

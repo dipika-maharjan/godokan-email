@@ -11,6 +11,11 @@ import StartSelling from "./vendor/StartSelling";
 import AddProducts from "./vendor/AddProducts";
 import ProductsApproved from "./vendor/ProductsApproved";
 import ProductQuestions from "./vendor/ProductQuestions";
+import ProductReview from "./vendor/ProductReview";
+import OrderMail from "./vendor/OrderMail";
+import PayoutRequest from "./vendor/PayoutRequest";
+import PayoutRequestStatus from "./vendor/PayoutRequestStatus";
+import PayoutRequestStatement from "./vendor/PayoutRequestStatement";
 
 function App() {
   // To read the URL path from the browser.
@@ -134,6 +139,97 @@ function App() {
           title: "Is this product available in black?",
           by: "NewUser",
           url: "https://godokan.com/seller/questions/1",
+        }}
+      />
+    );
+  }
+
+  if (path === "/vendor/product-review") {
+    return (
+      <ProductReview
+        name="user"
+        sellerName="GoDokan"
+        link="https://godokan.com/seller/feedback"
+        product={{
+          name: "Wireless Headphones",
+          code: "WH-001",
+          image: "https://placehold.co/300x180/f3f3f3/666666?text=Product",
+          category: "Electronics",
+          url: "https://godokan.com/products/wh-001",
+        }}
+        review={{
+          title: "Great product and fast delivery.",
+          by: "NewUser",
+          url: "https://godokan.com/seller/feedback/1",
+          rating: 5,
+        }}
+      />
+    );
+  }
+
+  if (path === "/vendor/order-mail") {
+    return (
+      <OrderMail
+        name="user"
+        sellerName="GoDokan"
+        orderNumber="#GD-1111"
+        orderFrom="NewUser"
+        link="https://godokan.com/seller/orders/GD-10245"
+        product={{
+          name: "Wireless Headphones",
+          code: "WH-001",
+          image: "https://placehold.co/300x180/f3f3f3/666666?text=Product",
+          category: "Electronics",
+          url: "https://godokan.com/products/wh-001",
+        }}
+      />
+    );
+  }
+
+  if (path === "/vendor/payout-request") {
+    return (
+      <PayoutRequest
+        name="user"
+        sellerName="GoDokan"
+        amount="NPR 25,000"
+        message="Please process my available balance."
+        link="https://godokan.com/seller/payouts"
+      />
+    );
+  }
+
+  if (path === "/vendor/payout-request-status") {
+    return (
+      <PayoutRequestStatus
+        name="user"
+        sellerName="GoDokan"
+        amount="NPR 25,000"
+        message="Please process my available balance."
+        status="Approved"
+        body="Your payout request has been approved and is being processed. The amount will be transferred according to the selected payout method."
+        link="https://godokan.com/seller/payouts/GD-10245"
+      />
+    );
+  }
+
+  if (path === "/vendor/payout-request-statement") {
+    return (
+      <PayoutRequestStatement
+        name="user"
+        sellerName="GoDokan"
+        amount="NPR 25,000"
+        message="Please process my available balance."
+        status="Approved"
+        body="Your payout statement is provided above for your records."
+        link="https://godokan.com/seller/payouts/GD-10245"
+        payout={{
+          payments: [
+            { amount: "NPR 20,000", modeOfPayment: "Bank Transfer" },
+            { amount: "NPR 5,000", modeOfPayment: "eSewa" },
+          ],
+          subTotal: "NPR 25,000",
+          charges: "NPR 500",
+          total: "NPR 24,500",
         }}
       />
     );
