@@ -1,14 +1,14 @@
-import Header from "./VendorHeader";
-import Footer from "./VendorFooter";
+import VendorHeader from "./VendorHeader";
+import VendorFooter from "./VendorFooter";
 
-function EmailLayout({ children }) {
+function VendorEmailLayout({ children }) {
   return (
     <div className="email-layout">
-      <Header />
+      <VendorHeader />
       <main className="email-main">{children}</main>
-      <Footer />
+      <VendorFooter />
     </div>
   );
 }
 
-export default EmailLayout;
+export default VendorEmailLayout;

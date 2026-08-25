@@ -3,7 +3,7 @@ import EmailButton from "../components/VendorEmailButton";
 
 function VerifyEmail() {
   return (
-    <EmailLayout>
+    <VendorEmailLayout>
       <article className="verify-email">
         <p className="verify-eyebrow">VERIFY YOUR EMAIL</p>
 
@@ -27,7 +27,7 @@ function VerifyEmail() {
         </p>
         <br />
       </article>
-    </EmailLayout>
+    </VendorEmailLayout>
   );
 }
 

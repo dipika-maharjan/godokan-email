@@ -1,7 +1,7 @@
 import Icon from "./Icons";
 import vendorLogo2 from "../assets/vendor-logo2.png";
 
-function Footer() {
+function VendorFooter() {
   return (
     <footer className="email-footer">
       <div className="footer-top">
@@ -66,4 +66,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default VendorFooter;

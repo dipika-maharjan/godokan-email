@@ -1,6 +1,6 @@
 import vendorLogo from "../assets/vendor-logo.png";
 
-function Header() {
+function VendorHeader() {
   return (
     <header className="email-header">
       <img className="email-header__logo" src={vendorLogo} alt="GODOKAN" />
@@ -8,4 +8,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default VendorHeader;
