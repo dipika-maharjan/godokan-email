@@ -20,6 +20,7 @@ function VerifyEmail() {
         </EmailButton>
 
         <p className="verify-help">
+          <br/>
           Didn&apos;t receive the email?
           <br />
           Check your spam or junk folder, or request a new verification email.

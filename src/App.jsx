@@ -5,6 +5,7 @@ import BusinessDetailsStatus from "./vendor/BusinessDetailsStatus";
 import SignUp from "./vendor/SignUp";
 import VerifyEmail from "./vendor/VerifyEmail";
 import AccountApproved from "./vendor/AccountApproved";
+import AddBusinessDetail from "./vendor/AddBusinessDetail";
 
 function App() {
   const path = window.location.pathname.replace(/\/$/, "") || "/";
@@ -23,6 +24,10 @@ function App() {
 
   if (path === "/vendor/account-approved") {
     return <AccountApproved />;
+  }
+
+  if (path === "/vendor/add-business-detail") {
+    return <AddBusinessDetail />;
   }
 
   return (
