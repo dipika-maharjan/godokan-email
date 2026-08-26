@@ -16,6 +16,67 @@ import OrderMail from "./vendor/OrderMail";
 import PayoutRequest from "./vendor/PayoutRequest";
 import PayoutRequestStatus from "./vendor/PayoutRequestStatus";
 import PayoutRequestStatement from "./vendor/PayoutRequestStatement";
+import CustomerGeneralStatement from "./pdf/CustomerGeneralStatement";
+
+// Temporary caller data
+const statement = {
+  orderId: "ORD202603120201",
+
+  customer: {
+    name: "Art Sewa Private Limited",
+    address: "Kathmandu",
+    registrationNumber: "34337/82/83",
+    panNumber: "3324364798",
+  },
+
+  shippingMethod: "Nepal Can Move",
+  paymentMethod: "Cash on Delivery",
+  generatedAt: "12-03-2026 06:12",
+
+  stores: [
+    {
+      // Seller 1
+      name: "Batterywala Nepal",
+      discount: 100,
+      shippingCharges: 200,
+      products: [
+        {
+          name: "Relife iPhone 12 Battery",
+          unitPrice: 1200,
+          quantity: 5,
+        },
+      ],
+    },
+
+    {
+      // Seller 2
+      name: "Slesha Enterprises",
+      discount: 50,
+      shippingCharges: 150,
+      products: [
+        {
+          name: "Relife iPhone 16 Battery",
+          unitPrice: 1500,
+          quantity: 2,
+        },
+      ],
+    },
+
+    {
+      // Seller 3
+      name: "New Electronics Store",
+      discount: 0,
+      shippingCharges: 100,
+      products: [
+        {
+          name: "Wireless Headphones",
+          unitPrice: 3000,
+          quantity: 1,
+        },
+      ],
+    },
+  ],
+};
 
 function App() {
   // To read the URL path from the browser.
@@ -233,6 +294,10 @@ function App() {
         }}
       />
     );
+  }
+
+  if (path === "/customer/general-statement") {
+    return <CustomerGeneralStatement statement={statement} />;
   }
 
   return (
