@@ -17,6 +17,7 @@ import PayoutRequest from "./vendor/PayoutRequest";
 import PayoutRequestStatus from "./vendor/PayoutRequestStatus";
 import PayoutRequestStatement from "./vendor/PayoutRequestStatement";
 import CustomerGeneralStatement from "./pdf/CustomerGeneralStatement";
+import PayoutStatement from "./pdf/PayoutStatement";
 
 // Temporary caller data
 const statement = {
@@ -76,6 +77,34 @@ const statement = {
       ],
     },
   ],
+};
+
+// Temporary PDF preview data
+const payoutStatement = {
+  orderId: "ORD202603120201",
+  orderDate: "March 12, 2026",
+  customer: {
+    name: "Art Sewa Private Limited",
+  },
+  seller: {
+    name: "Batterywala",
+    address: "Dharma Path, New Road, Kathmandu",
+    registrationNumber: "34337/82/83",
+    panNumber: "3324364798",
+  },
+  payout: {
+    currency: "NPR",
+    payments: [
+      {
+        description: "Payout Amount",
+        method: "BANK TRANSFER",
+        amount: 6000,
+      },
+    ],
+    charges: 0,
+  },
+  itemCount: 4,
+  generatedAt: "12-03-2026 06:12",
 };
 
 function App() {
@@ -298,6 +327,10 @@ function App() {
 
   if (path === "/customer/general-statement") {
     return <CustomerGeneralStatement statement={statement} />;
+  }
+
+  if (path === "/vendor/payout-statement") {
+    return <PayoutStatement statement={payoutStatement} />;
   }
 
   return (
