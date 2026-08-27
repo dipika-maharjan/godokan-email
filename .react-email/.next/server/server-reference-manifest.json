@@ -1,0 +1,104 @@
+{
+  "node": {
+    "001a064648dbc2620e42c57c99a15ccce4d6cdff0d": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": 53759,
+          "async": false,
+          "codeHash": null
+        },
+        "app/page": {
+          "moduleId": 88982,
+          "async": false,
+          "codeHash": null
+        },
+        "app/preview/[...slug]/page": {
+          "moduleId": 15192,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": ".react-email/src/actions/get-emails-directory-metadata-action.ts",
+      "exportedName": "getEmailsDirectoryMetadataAction"
+    },
+    "6073ba3803b005f30cc09da39121d6c296439eccd9": {
+      "workers": {
+        "app/preview/[...slug]/page": {
+          "moduleId": 15192,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": ".react-email/src/actions/email-validation/check-compatibility.ts",
+      "exportedName": "checkCompatibility"
+    },
+    "7f08b2e7e75edb8b6996f14265635d8c620d014747": {
+      "workers": {
+        "app/preview/[...slug]/page": {
+          "moduleId": 15192,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": ".react-email/src/actions/get-email-path-from-slug.ts",
+      "exportedName": "getEmailPathFromSlug"
+    },
+    "40910990a1a68ab4ea431ecc0d3e3cb11a80698053": {
+      "workers": {
+        "app/preview/[...slug]/page": {
+          "moduleId": 15192,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": ".react-email/src/actions/render-email-by-path.tsx",
+      "exportedName": "invalidateEmailRenderingCache"
+    },
+    "70d950910cc4ed2932895c13202efe5e95e7284839": {
+      "workers": {
+        "app/preview/[...slug]/page": {
+          "moduleId": 15192,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": ".react-email/src/actions/render-email-by-path.tsx",
+      "exportedName": "renderEmailByPath"
+    },
+    "6084d48bc204e317733fa64b7a0c6fe02373d7c06c": {
+      "workers": {
+        "app/preview/[...slug]/page": {
+          "moduleId": 15192,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": ".react-email/src/actions/email-validation/check-images.ts",
+      "exportedName": "checkImages"
+    },
+    "40c592015027ef55eab2af3bb7f1e5e5d5621c4e16": {
+      "workers": {
+        "app/preview/[...slug]/page": {
+          "moduleId": 15192,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": ".react-email/src/actions/email-validation/check-links.ts",
+      "exportedName": "checkLinks"
+    },
+    "7f6646da97915bf120f6be1f923f7d915465f47d49": {
+      "workers": {
+        "app/preview/[...slug]/page": {
+          "moduleId": 15192,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": ".react-email/src/actions/export-single-template.ts",
+      "exportedName": "exportSingleTemplate"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "Qxe0PNQ4N5AXoY0NxO9IxrMZ1qJXNw//S0k1R3l/C54="
+}

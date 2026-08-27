@@ -1,0 +1,9 @@
+:HL["/_next/static/chunks/13nf62b-1f0gl.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/SFMonoBold-s.p.036s5_b2vc0r3.otf","font",{"crossOrigin":"","type":"font/otf"}]
+:HL["/_next/static/media/SFMonoHeavy-s.p.205s3s5gu4ywq.otf","font",{"crossOrigin":"","type":"font/otf"}]
+:HL["/_next/static/media/SFMonoLight-s.p.3qf-lkbd8i867.otf","font",{"crossOrigin":"","type":"font/otf"}]
+:HL["/_next/static/media/SFMonoMedium-s.p.1-od64co72mc0.otf","font",{"crossOrigin":"","type":"font/otf"}]
+:HL["/_next/static/media/SFMonoRegular-s.p.2in-85ghbi028.otf","font",{"crossOrigin":"","type":"font/otf"}]
+:HL["/_next/static/media/SFMonoSemibold-s.p.2s4ngrwg2ifr8.otf","font",{"crossOrigin":"","type":"font/otf"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"preview","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"c","key":"vendors/add-products.vendor","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"QSPLkPghyti_vNGZmdbcP"}
