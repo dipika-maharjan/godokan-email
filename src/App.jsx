@@ -18,6 +18,7 @@ import PayoutRequestStatus from "./vendor/PayoutRequestStatus";
 import PayoutRequestStatement from "./vendor/PayoutRequestStatement";
 import CustomerGeneralStatement from "./pdf/CustomerGeneralStatement";
 import PayoutStatement from "./pdf/PayoutStatement";
+import OrderLabel from "./labels/OrderLabel";
 
 // Temporary caller data
 const statement = {
@@ -332,6 +333,37 @@ function App() {
   if (path === "/vendor/payout-statement") {
     return <PayoutStatement statement={payoutStatement} />;
   }
+
+ if (path === "/labels/order") {
+  return (
+    <OrderLabel
+      order={{
+        orderNumber: "ORD202603120201",
+        createdAt: "2026-08-26",
+
+        flags: {
+          fragile: true,
+          flammable: true,
+        },
+
+        orderFrom: {
+          name: "Art Sewa Private Limited",
+          phone: "+977-984348772",
+          address: "Tarakeshwor-6, Dharmasthali, Kathmandu",
+          email: "artsewannepal@gmail.com",
+        },
+
+        details: {
+          weight: "12 KG",
+          dimensions: "12x10x4 inches",
+          deliveryMethod: "National Courier",
+        },
+
+        trackingNumber: "12Z45234324",
+      }}
+    />
+  );
+}
 
   return (
     <>

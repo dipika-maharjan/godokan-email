@@ -1,4 +1,4 @@
-import vendorLogo from "../assets/vendor-logo.png";
+import vendorLogo from "../../emails/static/vendor-logo.png";
 
 function VendorHeader() {
   return (

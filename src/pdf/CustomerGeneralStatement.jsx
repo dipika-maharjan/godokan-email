@@ -8,7 +8,7 @@ import {
   View,
 } from "@react-pdf/renderer";
 import bwipjs from "bwip-js/browser";
-import cartLogo from "../assets/vendor-logo2.png";
+import cartLogo from "../../emails/static/vendor-logo2.png";
 
 /*
  * react-pdf does not use normal CSS files.

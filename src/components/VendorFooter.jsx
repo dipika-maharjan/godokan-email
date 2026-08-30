@@ -1,5 +1,5 @@
 import Icon from "./Icons";
-import vendorLogo2 from "../assets/vendor-logo2.png";
+import vendorLogo2 from "../../emails/static/vendor-logo2.png";
 
 function VendorFooter() {
   return (
