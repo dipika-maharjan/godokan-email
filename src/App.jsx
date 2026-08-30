@@ -19,6 +19,7 @@ import PayoutRequestStatement from "./vendor/PayoutRequestStatement";
 import CustomerGeneralStatement from "./pdf/CustomerGeneralStatement";
 import PayoutStatement from "./pdf/PayoutStatement";
 import OrderLabel from "./labels/OrderLabel";
+import SellerOrder from "./labels/SellerOrder";
 
 // Temporary caller data
 const statement = {
@@ -360,6 +361,22 @@ function App() {
         },
 
         trackingNumber: "12Z45234324",
+      }}
+    />
+  );
+}
+
+if (path === "/labels/seller-order") {
+  return (
+    <SellerOrder
+      order={{
+        orderNumber: "ORD202603120201-V01",
+        createdAt: "2026-08-26",
+        orderFrom: {
+          name: "Art Sewa Private Limited",
+          address: "Tarakeshwor-6, Dharmasthali,",
+          city: "Kathmandu",
+        },
       }}
     />
   );
