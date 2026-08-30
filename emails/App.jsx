@@ -1,14 +1,14 @@
 import "./App.css";
 import EmailLayout from "./components/EmailLayout";
-import SignUp from "./Customer/signup-mail";
-import VerifyMail from "./Customer/verify-mail";
-import AccountActivated from "./Customer/account-activated";
-import ChangePassword from "./Customer/ChangePassword";
-import CustomerAdded from "./Customer/customer-added";
-import PaymentFailed from "./Customer/paymentFailed";
-import PaymentSuccessful from "./Customer/paymentSuccessful";
-import OrderFailed from "./Customer/OrderFailed";
-import ThanksPlacingOrder from "./Customer/Thanks-placingOrder";
+import SignUp from "./customers/signup-mail";
+import VerifyMail from "./customers/verify-mail";
+import AccountActivated from "./customers/account-activated";
+import ChangePassword from "./customers/ChangePassword";
+import CustomerAdded from "./customers/customer-added";
+import PaymentFailed from "./customers/paymentFailed";
+import PaymentSuccessful from "./customers/paymentSuccessful";
+import OrderFailed from "./customers/OrderFailed";
+import ThanksPlacingOrder from "./customers/Thanks-placingOrder";
 
 const emailRoutes = {
   "/customer/signup": SignUp,
@@ -23,7 +23,10 @@ const emailRoutes = {
 };
 
 function App() {
-  const path = window.location.pathname.replace(/\/$/, "") || "/";
+  const path =
+    typeof window === "undefined"
+      ? "/customer/signup"
+      : window.location.pathname.replace(/\/$/, "") || "/";
   const Email = emailRoutes[path] || SignUp;
 
   return (

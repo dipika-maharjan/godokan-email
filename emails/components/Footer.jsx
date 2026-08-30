@@ -1,32 +1,28 @@
-import Icon from "./Icons";
-import vendorLogo2 from "../assets/vendor-logo2.png";
-
 function Footer() {
   return (
     <footer className="email-footer">
       <div className="footer-top">
         <div className="footer-contact">
           <div className="footer-logo">
-            <img src={vendorLogo2} alt="GODOKAN" />
+            <img
+              src="https://godokan.com/logo_grey.png"
+              alt="GODOKAN"
+            />
           </div>
 
           <p>
-            <Icon name="globe" />
             <span>godokan.com</span>
           </p>
 
           <p>
-            <Icon name="phone" />
             <span>+977-9852002009</span>
           </p>
 
           <p>
-            <Icon name="mail" />
             <span>hello@godokan.com</span>
           </p>
 
           <p>
-            <Icon name="location" />
             <span>New Road, Kathmandu, Nepal</span>
           </p>
         </div>
@@ -41,16 +37,16 @@ function Footer() {
 
         <div className="footer-socials">
           <a href="https://www.facebook.com/godokannepal" aria-label="Facebook">
-            <Icon name="facebook" />
+            Facebook
           </a>
           <a href="https://www.instagram.com/go.dokan/" aria-label="Instagram">
-            <Icon name="instagram" />
+            Instagram
           </a>
           <a href="https://wa.me/godokan" aria-label="WhatsApp">
-            <Icon name="whatsapp" />
+            WhatsApp
           </a>
           <a href="https://www.youtube.com/@godokan" aria-label="YouTube">
-            <Icon name="youtube" />
+            YouTube
           </a>
         </div>
       </div>
