@@ -248,27 +248,27 @@ function OrderLabel({ order = {} }) {
 
       <SectionTitle y={410}>DETAILS</SectionTitle>
 
-      <LabelText size={12} weight={700} x={24} y={460}>
+      <LabelText size={12} weight={700} x={24} y={440}>
         Weight:
       </LabelText>
 
-      <LabelText size={12} x={130} y={460}>
+      <LabelText size={12} x={130} y={440}>
         {details.weight || "-"}
       </LabelText>
 
-      <LabelText size={12} weight={700} x={24} y={480}>
+      <LabelText size={12} weight={700} x={24} y={460}>
         Dimension:
       </LabelText>
 
-      <LabelText size={12} x={130} y={480}>
+      <LabelText size={12} x={130} y={460}>
         {details.dimensions || "-"}
       </LabelText>
 
-      <LabelText size={12} weight={700} x={24} y={500}>
+      <LabelText size={12} weight={700} x={24} y={480}>
         Delivery Method:
       </LabelText>
 
-      <LabelText size={12} x={145} y={500}>
+      <LabelText size={12} x={145} y={480}>
         {details.deliveryMethod || "-"}
       </LabelText>
 
